@@ -1,0 +1,234 @@
+@import 'config';
+@import 'utilities';
+
+// General Styles
+* {
+  padding: 0;
+  margin: 0;
+  z-index: 2;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-color;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+// Logo
+#logo {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  height: auto;
+}
+
+#main-nav {
+  position: fixed;
+  display: flex;
+  z-index: 3;
+  background-color: rgba(255, 255, 255, 0.95);
+  right: 0%;
+  width: 100%;
+  justify-content: flex-end;
+  padding: 1.5rem;
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    padding: 0.5rem 1rem;
+  }
+
+  a {
+    text-decoration: none;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s;
+
+    &:hover {
+      border-color: $medium-color;
+    }
+
+    &.current {
+      border-color: $main-color;
+    }
+  }
+}
+
+#header {
+  &-home {
+    #particles-js {
+      position: relative;
+      top: 0;
+      z-index: 1;
+      width: 100%;
+      background-color: none;
+      background-size: cover;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
+
+    .header-content {
+      position: relative;
+      bottom: 65vh;
+      text-align: center;
+      margin: 0 auto;
+      height: 0px;
+      width: 50%;
+      a {
+        margin-top: 3rem;
+      }
+
+      .textHeading {
+        &-Welcome {
+          padding-top: 4rem;
+          font-size: 1rem;
+          letter-spacing: 0.8rem;
+          word-spacing: 0.8rem;
+          font-weight: 50;
+          color: $text-heading-light;
+          text-transform: uppercase;
+
+          .pipe {
+            vertical-align: middle;
+            opacity: 0.2;
+            font-size: 1.8rem;
+          }
+        }
+
+        &-WeDesign {
+          padding-top: 1.5rem;
+          font-size: 5rem;
+          letter-spacing: 0rem;
+          word-spacing: 0.6rem;
+          font-weight: 400;
+
+          .design {
+            color: $main-color;
+            font-weight: 800;
+          }
+        }
+      }
+    }
+  }
+}
+
+#home-about {
+  .skew {
+    height: 200px;
+    width: 300%;
+    position: relative;
+    background: #29abe2;
+    transform: skewy(-3deg);
+    -webkit-transform: skewy(-3deg);
+  }
+
+  .about {
+    color: #fff;
+    font-weight: 500;
+    background: #29abe2;
+    padding-bottom: 4rem;
+
+    .flexme {
+      display: flex;
+      justify-content: space-evenly;
+
+      .about-left {
+        width: 50%;
+        margin-top: 3rem;
+        font-size: 1.5rem;
+        color: black;
+
+        h1 {
+          font-weight: 800;
+        }
+
+        span {
+          color: #fff;
+          font-weight: 800;
+        }
+      }
+
+      .about-right {
+        height: 100%;
+        img {
+          width: auto;
+          border: solid;
+          border-color: #fff;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+#core-services,
+#our-promise {
+  margin-top: 5rem;
+  text-align: center;
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+  }
+
+  img {
+    width: 180px;
+    margin-bottom: 2rem;
+  }
+
+  h3 {
+    margin-bottom: 2rem;
+    font-weight: 100;
+  }
+
+  .core-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2rem;
+  }
+
+  p {
+    // height: 50px;
+    font-size: 1rem;
+    padding: 0 10px 0 10px;
+  }
+}
+
+.promise {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+99 */
+  background: rgb(255, 255, 255); /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    rgba(255, 255, 255, 1) 10%,
+    rgb(172, 172, 172) 99%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(255, 255, 255, 1) 10%,
+    rgb(172, 172, 172) 99%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1) 10%,
+    rgb(172, 172, 172) 99%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+}

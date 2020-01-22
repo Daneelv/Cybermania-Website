@@ -1,0 +1,209 @@
+.container {
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden; }
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently not supported by any browser */ }
+
+.btn-main, .btn-light, .btn-dark {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer; }
+
+.btn-main {
+  color: #333;
+  background-color: #29abe2; }
+
+.btn-light {
+  color: #333;
+  background-color: #f4f4f4; }
+
+.btn-dark {
+  color: #f4f4f4;
+  background-color: #333; }
+
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[class^='btn-']:hover {
+  background-color: #29abe2; }
+
+* {
+  padding: 0;
+  margin: 0;
+  z-index: 2; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background: #fff; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+ul {
+  list-style: none; }
+
+img {
+  width: 100%; }
+
+ul {
+  list-style: none; }
+
+#logo {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  height: auto; }
+
+#main-nav {
+  position: fixed;
+  display: flex;
+  z-index: 3;
+  background-color: rgba(255, 255, 255, 0.95);
+  right: 0%;
+  width: 100%;
+  justify-content: flex-end;
+  padding: 1.5rem; }
+  #main-nav ul {
+    display: flex; }
+  #main-nav li {
+    padding: 0.5rem 1rem; }
+  #main-nav a {
+    text-decoration: none;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s; }
+    #main-nav a:hover {
+      border-color: #ccc; }
+    #main-nav a.current {
+      border-color: #29abe2; }
+
+#header-home #particles-js {
+  position: relative;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: none;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
+
+#header-home .header-content {
+  position: relative;
+  bottom: 65vh;
+  text-align: center;
+  margin: 0 auto;
+  height: 0px;
+  width: 50%; }
+  #header-home .header-content a {
+    margin-top: 3rem; }
+  #header-home .header-content .textHeading-Welcome {
+    padding-top: 4rem;
+    font-size: 1rem;
+    letter-spacing: 0.8rem;
+    word-spacing: 0.8rem;
+    font-weight: 50;
+    color: #7c7c7c;
+    text-transform: uppercase; }
+    #header-home .header-content .textHeading-Welcome .pipe {
+      vertical-align: middle;
+      opacity: 0.2;
+      font-size: 1.8rem; }
+  #header-home .header-content .textHeading-WeDesign {
+    padding-top: 1.5rem;
+    font-size: 5rem;
+    letter-spacing: 0rem;
+    word-spacing: 0.6rem;
+    font-weight: 400; }
+    #header-home .header-content .textHeading-WeDesign .design {
+      color: #29abe2;
+      font-weight: 800; }
+
+#home-about .skew {
+  height: 200px;
+  width: 300%;
+  position: relative;
+  background: #29abe2;
+  transform: skewy(-3deg);
+  -webkit-transform: skewy(-3deg); }
+
+#home-about .about {
+  color: #fff;
+  font-weight: 500;
+  background: #29abe2;
+  padding-bottom: 4rem; }
+  #home-about .about .flexme {
+    display: flex;
+    justify-content: space-evenly; }
+    #home-about .about .flexme .about-left {
+      width: 50%;
+      margin-top: 3rem;
+      font-size: 1.5rem;
+      color: black; }
+      #home-about .about .flexme .about-left h1 {
+        font-weight: 800; }
+      #home-about .about .flexme .about-left span {
+        color: #fff;
+        font-weight: 800; }
+    #home-about .about .flexme .about-right {
+      height: 100%; }
+      #home-about .about .flexme .about-right img {
+        width: auto;
+        border: solid;
+        border-color: #fff;
+        border-radius: 50%; }
+
+#core-services,
+#our-promise {
+  margin-top: 5rem;
+  text-align: center; }
+  #core-services h1,
+  #our-promise h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5rem; }
+  #core-services img,
+  #our-promise img {
+    width: 180px;
+    margin-bottom: 2rem; }
+  #core-services h3,
+  #our-promise h3 {
+    margin-bottom: 2rem;
+    font-weight: 100; }
+  #core-services .core-flex,
+  #our-promise .core-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2rem; }
+  #core-services p,
+  #our-promise p {
+    font-size: 1rem;
+    padding: 0 10px 0 10px; }
+
+.promise {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+99 */
+  background: white;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, white 10%, #acacac 99%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, white 10%, #acacac 99%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, white 10%, #acacac 99%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 );
+  /* IE6-9 */ }
