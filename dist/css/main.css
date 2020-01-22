@@ -192,6 +192,7 @@ ul {
     grid-gap: 2rem; }
   #core-services p,
   #our-promise p {
+    margin-bottom: 3rem;
     font-size: 1rem;
     padding: 0 10px 0 10px; }
 
@@ -207,3 +208,14 @@ ul {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 );
   /* IE6-9 */ }
+  .promise .material-icons {
+    font-size: 8rem;
+    color: #29abe2;
+    margin-bottom: 2rem;
+    font-weight: lighter; }
+
+#work-togheter {
+  text-align: center;
+  padding-top: 5rem;
+  background: #29abe2;
+  min-height: 300px; }

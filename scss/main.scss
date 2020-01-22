@@ -206,7 +206,7 @@ ul {
   }
 
   p {
-    // height: 50px;
+    margin-bottom: 3rem;
     font-size: 1rem;
     padding: 0 10px 0 10px;
   }
@@ -231,4 +231,19 @@ ul {
     rgb(172, 172, 172) 99%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+
+  .material-icons {
+    font-size: 8rem;
+    color: $main-color;
+    margin-bottom: 2rem;
+    font-weight: lighter;
+    // -webkit-text-stroke: 3px #d3d3d3;
+  }
+}
+
+#work-togheter {
+  text-align: center;
+  padding-top: 5rem;
+  background: $main-color;
+  min-height: 300px;
 }
