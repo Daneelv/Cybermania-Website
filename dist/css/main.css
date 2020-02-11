@@ -4,6 +4,21 @@
   margin: auto;
   overflow: hidden; }
 
+.py-1 {
+  padding: 10px 0 10px 0; }
+
+.py-2 {
+  padding: 20px 0 20px 0; }
+
+.py-3 {
+  padding: 30px 0 30px 0; }
+
+.py-4 {
+  padding: 40px 0 40px 0; }
+
+.text-center {
+  text-align: center; }
+
 .noselect {
   -webkit-touch-callout: none;
   /* iOS Safari */
@@ -137,7 +152,7 @@ ul {
 
 #home-about .skew {
   height: 200px;
-  width: 300%;
+  top: 50px;
   position: relative;
   background: #29abe2;
   transform: skewy(-3deg);
@@ -219,3 +234,166 @@ ul {
   padding-top: 5rem;
   background: #29abe2;
   min-height: 300px; }
+  #work-togheter h3 {
+    font-size: 1.4rem;
+    font-weight: 20; }
+  #work-togheter h1 {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    font-weight: 20; }
+    #work-togheter h1 span {
+      color: #fff; }
+  #work-togheter a {
+    border: solid #29abe2;
+    border-radius: 30px;
+    width: 150px;
+    padding: 12px; }
+  #work-togheter a:hover {
+    border: solid #fff;
+    background-color: #29abe2;
+    color: #333;
+    transition: 500ms ease-in-out; }
+
+#our-work {
+  /* Style the Image Used to Trigger the Modal */
+  /* The Modal (background) */
+  /* Modal Content (Image) */
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  /* Add Animation - Zoom in the Modal */
+  /* The Close Button */
+  /* 100% Image Width on Smaller Screens */ }
+  #our-work h1 {
+    font-size: 2.5rem; }
+  #our-work .flex-image {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 6rem; }
+    #our-work .flex-image .Img {
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      transition: 0.3s;
+      max-width: 250px;
+      height: auto;
+      transition: all 0.8s ease-in-out; }
+    #our-work .flex-image .Img:hover {
+      transform: scale(1.2); }
+  #our-work .modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 9999;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100vh;
+    background-color: black;
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */ }
+  #our-work .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px; }
+  #our-work #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px; }
+  #our-work .modal-content,
+  #our-work #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s; }
+
+@keyframes zoom {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
+  #our-work .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s; }
+  #our-work .close:hover,
+  #our-work .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer; }
+  @media only screen and (max-width: 700px) {
+    #our-work .modal-content {
+      width: 100%; } }
+
+#contact-us {
+  background-color: #29abe2;
+  padding: 10rem; }
+  #contact-us h1 {
+    padding-bottom: 5rem;
+    font-size: 2.5rem; }
+  #contact-us #contact {
+    background: #f9f9f9;
+    padding: 5rem;
+    margin: 150px 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    width: 800px;
+    margin: 0 auto; }
+    #contact-us #contact fieldset {
+      border: medium none !important;
+      margin: 0 0 10px;
+      min-width: 100%;
+      padding: 0;
+      width: 100%; }
+    #contact-us #contact input[type='text'],
+    #contact-us #contact input[type='email'],
+    #contact-us #contact input[type='tel'],
+    #contact-us #contact input[type='url'],
+    #contact-us #contact textarea,
+    #contact-us #contact button[type='submit'] {
+      font: 400 14px/16px 'Roboto', Helvetica, Arial, sans-serif;
+      width: 100%;
+      height: 10px;
+      border: none;
+      border-radius: 0.3rem;
+      padding: 1rem; }
+    #contact-us #contact input[type='text']:hover,
+    #contact-us #contact input[type='email']:hover,
+    #contact-us #contact input[type='tel']:hover,
+    #contact-us #contact input[type='url']:hover,
+    #contact-us #contact textarea:hover {
+      -webkit-transition: border-color 0.3s ease-in-out;
+      -moz-transition: border-color 0.3s ease-in-out;
+      transition: border-color 0.3s ease-in-out;
+      border: 1px solid #aaa; }
+    #contact-us #contact textarea {
+      height: 150px;
+      max-width: 100%;
+      resize: none; }
+    #contact-us #contact button[type='submit'] {
+      cursor: pointer;
+      width: 50%;
+      height: 3rem;
+      border-radius: 5px;
+      border: none;
+      color: #fff;
+      margin: 0 auto;
+      display: block;
+      margin-top: 2rem;
+      padding: 10px;
+      font-size: 15px; }
+    #contact-us #contact input:focus,
+    #contact-us #contact textarea:focus {
+      outline: 0;
+      border: 1px solid #aaa; }
