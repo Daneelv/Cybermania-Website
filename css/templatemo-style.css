@@ -73,6 +73,23 @@ h6 {
 	background-attachment: fixed !important;
 	background-size: cover !important;
 }
+
+
+.text-light {
+	color: #fff;
+}
+
+.bg-black {
+	background-color: #303030;
+	color: #ffffff;
+}
+
+.bg-blue {
+	background-color: #29ABE2;
+	color: #ffffff;
+}
+
+
 /* preloader section */
 .preloader {
 	position: fixed;
@@ -133,7 +150,8 @@ transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
 	height: 100vh;
 	text-align: center;
 }
-#home h2, h3 {
+#home h2, h3, h5 {
+	padding: 0.3rem;
 	letter-spacing: 2px;
 	color: #080808;
 }
@@ -189,11 +207,10 @@ canvas{
 	box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.04);
 	margin: 0 !important;
 }
+
 .navbar-default .navbar-brand {
-	font-size: 40px;
-	font-weight: bold;
-	margin: 0;
-	line-height: 40px !important;
+	padding: 0;
+	padding-top: 15px;
 }
 .navbar-default .navbar-nav li a {
 	color: #606060;
@@ -244,14 +261,11 @@ canvas{
 #work .title {
 	padding: 100px 60px 60px 60px;
 }
-#work .bg-black {
-	background-color: #303030;
-	color: #ffffff;
+
+#work .service {
+	min-height: 300px;
 }
-#work .bg-red {
-	background-color: #29ABE2;
-	color: #ffffff;
-}
+
 #work h3 {
 	padding-bottom: 60px;
 }
@@ -272,31 +286,58 @@ canvas{
 	color: #303030;
 }
 /* team section */
-#team {
-	background: #202020 url('../images/team-bg.jpg') 50% 0 repeat-y fixed;
+#promise {
+	background: #202020 url('../images/sergey-zolkin-_UeY8aTI6d0-unsplash.jpg') no-repeat fixed center;
+	background-position: center;
+	background-size: cover;
 	color: #ffffff;
 	padding-top: 100px;
 	padding-bottom: 100px;
 }
-#team h2 {
+
+#promise i {
+	color : #ffff;
+	padding: 2rem 0 2rem 0;
+}
+
+#promise h2 {
 	color: #ffffff;
 }
-#team h3 {
-	font-size: 20px;
-	line-height: 10px;
+#promise p {
+	font-size: 1.6rem;
+	line-height: 20px;
+	font-weight: 100;
 }
-#team h4 {
+#promise h4 {
 	color: #202020;
-	line-height: 10px;
+	line-height: 30px;
 	font-weight: bold;
+	margin-bottom: 2.5rem;
 }
-#team .team-des {
+#promise .card {
 	background-color: #29ABE2;
 	color: #ffffff;
-	padding: 20px 12px;
-	position: relative;
+	-webkit-box-shadow: -1px 7px 26px 6px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 7px 26px 6px rgba(0,0,0,0.75);
+	box-shadow: -1px 7px 26px 6px rgba(0,0,0,0.75);
+	transition: transform 1s ease-out;
+	border: none;
+	min-height: 390px;
+	padding: 0;
 }
-#team img {
+
+#promise .card .icon,
+#promise .card .detail { 
+
+	padding: 10px 20px 20px 10px;
+}
+
+#promise .card:hover {	
+	transform: scale(1.05);
+}
+
+
+#promise img {
 	max-width: 100%;
 	height: auto;
 	padding-top: 60px;
@@ -454,7 +495,7 @@ footer .copyright a {
 .social-icon li a:hover {
 	background: #080808;
 }
-@media screen and (max-width:980px) {
+@media screen and (max-width:1024px) {
 .navbar-default .navbar-nav li a {
 	padding-right: 14px;
 	padding-left: 14px;
@@ -464,28 +505,58 @@ footer .copyright a {
 	font-size: 32px;
 }
 #work .title {
-	padding: 80px 20px 20px 20px;
+	padding: 60px 20px 30px 20px;
 }
 .portfolio-thumb .portfolio-overlay {
 	padding-top: 24px;
 }
+
+#promise .card {
+	transition: none;
+	padding: 0;
+	margin-bottom: 2rem;
 }
-@media (max-width:767px) {
-.navbar-brand {
-	padding-top: 6px;
+#promise .card:hover {	
+	transform: scale(1);
 }
 }
+@media (max-width:678) {
+	.navbar-brand {
+		padding-top: 6px;
+	}
+
+	#promise .card {
+		transition: none;
+		margin-bottom: 2rem;
+	}
+	#promise .card:hover {	
+		transform: scale(1);
+	}
+}
+
 @media (max-width:400px) {
-#home h1 {
-	font-size: 32px;
+	#home h1 {
+		font-size: 32px;
+	}
+	#home h2 {
+		font-size: 22px;
+	}
+	#intro h2 {
+		font-size: 20px;
+	}
+	.portfolio-thumb .portfolio-overlay {
+		padding-top: 60px;
+	}
+
+	#promise .card {
+		transition: none;
+		padding: 0;
+		margin-bottom: 2rem;
+	}
+	#promise .card:hover {	
+		transform: scale(1);
+	}
 }
-#home h2 {
-	font-size: 22px;
-}
-#intro h2 {
-	font-size: 20px;
-}
-.portfolio-thumb .portfolio-overlay {
-	padding-top: 60px;
-}
-}
+
+
+
