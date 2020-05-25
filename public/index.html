@@ -321,11 +321,12 @@
         </div>
         <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 contact-form wow fadeInUp" data-wow-delay="0.9s">
 
-          <form name="contact" method="POST" data-netlify="true">
+          <form name="contact" method="POST" netlify>
             <input type="text" class="form-control" placeholder="Name" required>
             <input type="email" class="form-control" placeholder="Email" required>
             <textarea class="form-control" placeholder="Message" rows="6" required></textarea>
             <input type="submit" class="form-control" value="SEND EMAIL">
+            <div netlify-recaptcha></div>
           </form>
         </div>
       </div>
