@@ -466,8 +466,8 @@ canvas{
 #contact video {
 	position: absolute;
 	left: 0px;
-	bottom: 450px;
-	height: 707px;
+	bottom: 423px;
+	height: 750px;
 	width: 100%;
 	object-fit: fill;
 	z-index: -1;
@@ -476,9 +476,9 @@ canvas{
 
   #contact .overlay {
 	position: absolute;
-	bottom: 450px;
+	bottom: 423px;
 	left: 0;
-	height: 707px;
+	height: 750px;
 	width: 100% ;
 	background-color: black;
 	opacity: 0.3;
