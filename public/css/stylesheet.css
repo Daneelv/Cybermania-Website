@@ -466,7 +466,7 @@ canvas{
 #contact video {
 	position: absolute;
 	left: 0px;
-	bottom: 423px;
+	bottom: 450px;
 	height: 707px;
 	width: 100%;
 	object-fit: fill;
@@ -476,7 +476,7 @@ canvas{
 
   #contact .overlay {
 	position: absolute;
-	bottom: 423px;
+	bottom: 450px;
 	left: 0;
 	height: 707px;
 	width: 100% ;
@@ -624,7 +624,8 @@ footer .copyright a {
 	  }
 
 
-	  #contact video {
+	  #contact video,
+	  #contact .overlay{
 		display: none;
 	}
 
