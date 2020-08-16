@@ -320,9 +320,7 @@
   <section id="contact">
     <div class="overlay"></div>
     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-      <source
-        src="https://stream.mux.com/MIqZ49lBiw8TS8BKOTCnQd00AMdco9llu/high.mp4?token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InQ5UHZucm9ZY0hQNjhYSmlRQnRHTEVVSkVSSXJ0UXhKIn0.eyJleHAiOjE1OTA2OTkyNzcsImF1ZCI6InYiLCJzdWIiOiJNSXFaNDlsQml3OFRTOEJLT1RDblFkMDBBTWRjbzlsbHUifQ.XZ6t7xApRdf6M54x9uYbtQtlMJmS2Wt6IciOfWTj160kjWqywSNps8Wka6UCAtmCgNUnuT3j20RkmhaWcdqVl8Mah8SZjDiBa12oJ2P6nTVZpGs9TW3asGCrdyRGrQqWTH_jjRxD2QBckItsW6XHQB9GbFKR8Itk2EIUtTlaGAkQ8h8BmhqJEZydfqU1QItiMARs6g1HphPJqBneDUhelmvcT3u-g9VNfDd6AppBL_Sw4_lPwLm11Le2B7KLLaV9gK9wj9SZ5mG6L67FDjRFlKMrF1A9T77DZOnL-StMBdHPHCBs83Wm8-d6yiAKQ11UeUnfMyXQcSMdLz_OEdhf0Q"
-        type="video/mp4">
+      <source src="./Video/Ski-Day.mp4" type="video/mp4">
     </video>
     <div class="container">
       <div class="row">
@@ -333,12 +331,20 @@
         </div>
         <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 contact-form wow fadeInUp" data-wow-delay="0.9s">
 
-          <form name="contact" method="POST" netlify>
+          <!-- <form name="contact" method="POST" netlify> -->
+
+
+          <form action="https://app.99inbound.com/api/e/qoR3GTes" name="contact" method="POST">
             <input type="text" name="name" class="form-control" placeholder="Name" required>
             <input type="email" name="email" class="form-control" placeholder="Email" required>
             <textarea class="form-control" name="message" placeholder="Message" rows="6" required></textarea>
             <input type="submit" class="form-control" value="SEND EMAIL">
-            <div netlify-recaptcha></div>
+            <div style="position: absolute; left: -5000px;">
+              <input type="checkbox" name="grandmas_yellow_polka_dotted_chair" value="1" tabindex="-1"
+                autocomplete="no">
+            </div>
+
+            <!-- <div netlify-recaptcha></div> -->
           </form>
         </div>
       </div>
