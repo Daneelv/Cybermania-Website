@@ -593,8 +593,15 @@ footer .copyright a {
 		padding: 50px  0 0 0 ;
 	}
 
-	#services {
-		padding: 0 0 0 0 ;
+	.service {
+		
+		padding: 50px 0 0 0 ;
+		display : flex;
+		flex-direction: column;
+	}
+
+	.service2  {
+		order: 4	
 	}
 
 	#intro h2 {
